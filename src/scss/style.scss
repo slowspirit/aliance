@@ -1,0 +1,22 @@
+@import "libs"; // Файлы стилей вендоров/плвгинов
+@import "vars"; // Переменные
+// @import "fonts"; // Подключение шрифтов
+@import "reset"; // Сброс стилей
+@import "global"; // Подключение глбальных стилей
+
+/*
+* Components
+*/
+
+//  Пример подключения стилей блоков
+@import "components/container";
+@import "components/header";
+@import "components/menu";
+@import "components/footer";
+@import "components/breadcrumbs";
+@import "components/pagination";
+@import "components/accordion";
+@import "components/input-number";
+@import "components/title";
+@import "components/button";
+@import "components/form";

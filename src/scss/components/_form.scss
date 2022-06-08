@@ -1,0 +1,110 @@
+.form {
+
+    //CHECKBOX
+
+    &__checkbox {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__checkbox-input {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        z-index: -1;
+        display: block;
+        position: absolute;
+
+        &:checked+.form__checkbox-square {
+            background-color: lightskyblue;
+            background-image: url("@img/checkbox-checked.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:disabled+.form__checkbox-square {
+            background-color: lightgray;
+            border-color: gray;
+        }
+
+        &:checked:disabled+.form__checkbox-square {
+            background-color: lightgray;
+            border-color: gray;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("@img/checked-disabled.svg");
+        }
+    }
+
+    &__checkbox-square {
+        width: 20px;
+        height: 20px;
+        background-color: $white;
+        border: 1px solid gray;
+        border-radius: 5px;
+        position: absolute;
+        margin-top: -2px;
+    }
+
+    &__checkbox-text {
+        font-size: $font-size-normal;
+        display: inline-block;
+        margin-left: 28px;
+    }
+
+    //RADIOBUTTONS
+
+    &__radio {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__radio-input {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        z-index: -1;
+        display: block;
+        position: absolute;
+
+        &:checked+.form__radio-circle {
+            background-color: $white;
+            background-image: url("@img/radio-checked.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &:disabled+.form__radio-circle {
+            background-color: lightgray;
+            border-color: gray;
+        }
+
+        &:checked:disabled+.form__radio-circle {
+            background-color: lightgray;
+            border-color: gray;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url("@img/radio-disabled.svg");
+        }
+    }
+
+    &__radio-circle {
+        width: 20px;
+        height: 20px;
+        background-color: $white;
+        border: 1px solid gray;
+        border-radius: 5px;
+        position: absolute;
+        margin-top: -2px;
+    }
+
+    &__radio-circle {
+        border-radius: 50%;
+    }
+
+    &__radio-text {
+        font-size: $font-size-normal;
+        display: inline-block;
+        margin-left: 28px;
+    }
+}
