@@ -1,0 +1,12 @@
+.logo {
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        height: 44px;
+
+    }
+
+    padding: 24px 50px 25px;
+    border-right: 1px solid rgba($athens-gray, .2);
+    border-bottom: 1px solid rgba($athens-gray, .2);
+}

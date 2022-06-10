@@ -1,0 +1,29 @@
+.submenu {
+    display: none;
+    width: 300px;
+    position: absolute;
+    top: 94px;
+    color: $black;
+    padding: 20px 30px;
+    background-color: $white;
+    z-index: 999;
+
+    &__item {
+        margin-bottom: 15px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        &:hover {
+            text-decoration: underline;
+            color: $accent;
+        }
+    }
+}
+
+ul.submenu {
+    padding: 20px 30px;
+}

@@ -1,0 +1,53 @@
+.trademarks {
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__items {
+        display: flex;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        border: 1px solid $athens-gray;
+        transition: all .3s;
+
+        &:first-child {
+            border-right: 1px solid transparent;
+        }
+
+        &:hover {
+            border-color: $accent;
+
+            .trademarks__image {
+                path {
+                    fill: $accent;
+                }
+            }
+
+            .trademarks__item-title {
+                color: $accent;
+            }
+        }
+    }
+
+
+    &__image {
+        margin-right: 50px;
+
+        path {
+            transition: all .3s;
+            fill: $regent-gray;
+        }
+    }
+
+    &__item-title {
+        transition: all .3s;
+    }
+
+    &__item-text {
+        max-width: 360px;
+    }
+}

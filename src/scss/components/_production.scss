@@ -1,0 +1,41 @@
+.production {
+    &__title {
+        margin-bottom: 50px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex: 0 1 33.33333%;
+        height: 593px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: 1px solid $athens-gray;
+        transition: all .3s;
+
+        &:hover {
+            border-color: $accent;
+
+            .production__item-title {
+                color: $accent;
+            }
+        }
+    }
+
+    &__item-info {
+        margin: 40px 0 0 50px;
+    }
+
+    &__item-title {
+        transition: all .3s;
+    }
+
+    &__item-text {
+        margin-top: 10px;
+        width: 315px;
+    }
+}

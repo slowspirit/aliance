@@ -16,6 +16,7 @@
     "devDependencies": {
         "browser-sync": "^2.27.7",
         "del": "^6.0.0",
+        "dotdotdot-js": "^4.1.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
         "gulp-clean-css": "^4.3.0",
@@ -40,7 +41,9 @@
         "gulp-webpcss": "^1.1.1",
         "gulp-zip": "^5.1.0",
         "jquery": "^3.6.0",
+        "jquery-mask-plugin": "^1.14.16",
         "sass": "^1.49.7",
+        "slick-carousel": "^1.8.1",
         "vinyl-ftp": "^0.6.1",
         "webp-converter": "2.2.3",
         "webpack": "^5.69.0",

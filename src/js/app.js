@@ -1,12 +1,19 @@
 import $ from "jquery";
 // import * as flsFunctions from "./modules/functions.js"
 import headerScripts from "./modules/header.js"
-import inputNumber from "./modules/inputNumber.js";
 import pagination from "./modules/pagination.js";
-import accordion from "./modules/accordion.js";
+import exclusivitySlider from "./modules/exclusivity-slider.js";
+import schemeSlider from "./modules/scheme-slider.js";
+import blogMiniSlider from "./modules/blog-mini-slider.js";
+import dotdotdot from "./modules/dotdotdot.js";
+import maskPlugin from "./modules/maskPlugin.js"
+
 
 // flsFunctions.isWebp();
 headerScripts();
-inputNumber();
 pagination();
-accordion();
+exclusivitySlider();
+schemeSlider();
+blogMiniSlider();
+dotdotdot();
+maskPlugin();

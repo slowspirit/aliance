@@ -1,7 +1,10 @@
 .menu {
-    margin: 0 auto;
+    position: relative;
+    flex-grow: 1;
+    border-bottom: 1px solid rgba($athens-gray, .2);
 
     &__list {
+        margin: 0 50px;
         display: flex;
 
         @media #{$screen-mobile} {
@@ -26,7 +29,41 @@
     }
 
     &__item {
-        margin-right: 70px;
+        margin-right: 50px;
+        position: relative;
+        cursor: pointer;
+        padding: 33px 0;
+        border-bottom: 2px solid rgba($accent, 0);
+        transition: all .3s;
+
+        &:hover {
+            border-bottom: 2px solid rgba($accent, 1);
+
+            & .menu__submenu {
+                display: block;
+            }
+        }
+
+        &.menu__phone {
+            margin-left: auto;
+            padding-left: 34px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 32px;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                background-image: url("@img/icons/phone.svg");
+                background-repeat: no-repeat;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
 
         @media #{$screen-mobile} {
             margin: 25px 0;
@@ -35,6 +72,7 @@
 
         &:last-child {
             margin-right: 0;
+            border-bottom: none;
         }
     }
 

@@ -1,1 +1,45 @@
-.button {}
+.button {
+    border: none;
+    cursor: pointer;
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $accent;
+        color: $white;
+        padding: 24px 50px;
+        transition: all .3s;
+
+        &:hover {
+            background-color: $accent-hover;
+        }
+    }
+
+    &__stroke {
+        color: $accent;
+        padding-left: 60px;
+        position: relative;
+        cursor: pointer;
+        transition: all .3s;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 40px;
+            height: 1px;
+            left: 0;
+            top: 50%;
+            background-color: $accent;
+            transition: all .3s;
+        }
+
+        &:hover {
+            padding-left: 80px;
+
+            &::before {
+                width: 60px;
+            }
+        }
+    }
+}

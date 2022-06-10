@@ -1,0 +1,46 @@
+.request {
+    padding-top: 74px;
+    margin-top: 100px;
+    position: relative;
+    background-color: $bg-grey;
+
+    height: 552px;
+
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 37.5%;
+        height: 620px;
+        background-image: url("@img/request-bg.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: contain;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        width: 840px;
+        margin-left: auto;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__text {
+        max-width: 640px;
+        margin-bottom: 42px;
+    }
+
+}

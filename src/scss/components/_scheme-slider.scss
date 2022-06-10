@@ -1,0 +1,59 @@
+.scheme-slider {
+    // min-width: 0;
+
+    & .slick-list {
+        overflow: hidden;
+    }
+
+    & .slick-track {
+        display: flex;
+
+    }
+
+    &__slide {
+        width: 330px;
+    }
+
+    &__slide-number {
+        display: block;
+        font-family: 'BebasNeue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 120%;
+        color: #5C8EE6;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        padding-right: 290px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 260px;
+            height: 1px;
+            top: 20px;
+            right: 0;
+            background-color: $athens-gray;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__slide-title {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    &__slide-text {
+        width: 300px;
+        color: $regent-gray;
+    }
+
+    &__slide-link {
+        display: block;
+        margin-top: 20px;
+    }
+}

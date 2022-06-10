@@ -1,17 +1,24 @@
-// Screen widths
+//  === Screen widths  ===
 
-$screen-tablet: "(max-width: 1279px)";
+$screen-desktop: "(max-width: 1279px)";
+$screen-tablet: "(max-width: 991px)";
 $screen-mobile: "(max-width: 767px)";
 
 
-// Colors
+//  === Colors ===
+$white: #FAFBFC;
+$black: #292D33;
+$accent: #5C8EE6;
+$accent-hover: #3A71D1;
+$athens-gray: #EBEBF0;
+$bg-grey: #F0F2F5;
+$regent-gray: #828A99;
 
-$white: #ffffff;
-$black: #000000;
 
+// === Fonts ===
+$font-family-default: "NotoSans";
 
-//Fonts sizes
-
+// === Fonts sizes ===
 $font-size-normal: 16px;
 
 $font-size-large: 20px;
@@ -19,7 +26,6 @@ $font-size-medium: 18px;
 $font-size-small: 14px;
 $font-size-extraSmall: 12px;
 
-
-//Fonts colors
-
-$text-main-color: $black;
+// === Fonts colors  ===
+$text-gray: $regent-gray;
+$text-black: $black;

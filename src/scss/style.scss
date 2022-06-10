@@ -1,6 +1,6 @@
 @import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
-// @import "fonts"; // Подключение шрифтов
+@import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
 @import "global"; // Подключение глбальных стилей
 
@@ -8,15 +8,36 @@
 * Components
 */
 
-//  Пример подключения стилей блоков
+// === Common ===
 @import "components/container";
-@import "components/header";
-@import "components/menu";
-@import "components/footer";
-@import "components/breadcrumbs";
-@import "components/pagination";
-@import "components/accordion";
-@import "components/input-number";
 @import "components/title";
 @import "components/button";
 @import "components/form";
+@import "components/breadcrumbs";
+@import "components/pagination";
+// === Header ===
+@import "components/header";
+@import "components/logo";
+@import "components/menu";
+@import "components/submenu";
+// === Hero ===
+@import "components/hero";
+@import "components/exclusivity-slider";
+// ===Scheme===
+@import "components/scheme";
+@import "components/scheme-slider";
+// === Production ===
+@import "components/production";
+// === Trademarks ===
+@import "components/trademarks";
+// ===  Attitude ===
+@import "components/attitude";
+// ===  Spheres ===
+@import "components/spheres";
+// === Blog-mini ===
+@import "components/blog-mini";
+@import "components/blog-mini-slider";
+// === Request ===
+@import "components/request";
+// === Footer ===
+@import "components/footer";

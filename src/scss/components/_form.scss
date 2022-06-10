@@ -1,110 +1,53 @@
 .form {
+    width: 100%;
 
-    //CHECKBOX
-
-    &__checkbox {
-        display: block;
-        margin-bottom: 20px;
+    &__input-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 30px;
     }
 
-    &__checkbox-input {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        z-index: -1;
-        display: block;
-        position: absolute;
+    &__input {
+        width: 50%;
+        border: 1px solid #E4E4EB;
+        background-color: transparent;
+        padding: 20px 10px 20px 30px;
+    }
 
-        &:checked+.form__checkbox-square {
-            background-color: lightskyblue;
-            background-image: url("@img/checkbox-checked.svg");
+    &__bottom {
+        display: flex;
+    }
+
+    &__btn {
+        width: 265px;
+        height: 62px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 160%;
+        margin-right: 30px;
+
+        // padding: 20px 50px;
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+        max-width: 403px;
+        padding-left: 24px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 14px;
+            top: 0;
+            left: 0;
+            background-image: url("@img/icons/shield.svg");
             background-repeat: no-repeat;
-            background-position: center;
+
         }
-
-        &:disabled+.form__checkbox-square {
-            background-color: lightgray;
-            border-color: gray;
-        }
-
-        &:checked:disabled+.form__checkbox-square {
-            background-color: lightgray;
-            border-color: gray;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url("@img/checked-disabled.svg");
-        }
-    }
-
-    &__checkbox-square {
-        width: 20px;
-        height: 20px;
-        background-color: $white;
-        border: 1px solid gray;
-        border-radius: 5px;
-        position: absolute;
-        margin-top: -2px;
-    }
-
-    &__checkbox-text {
-        font-size: $font-size-normal;
-        display: inline-block;
-        margin-left: 28px;
-    }
-
-    //RADIOBUTTONS
-
-    &__radio {
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    &__radio-input {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        z-index: -1;
-        display: block;
-        position: absolute;
-
-        &:checked+.form__radio-circle {
-            background-color: $white;
-            background-image: url("@img/radio-checked.svg");
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        &:disabled+.form__radio-circle {
-            background-color: lightgray;
-            border-color: gray;
-        }
-
-        &:checked:disabled+.form__radio-circle {
-            background-color: lightgray;
-            border-color: gray;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-image: url("@img/radio-disabled.svg");
-        }
-    }
-
-    &__radio-circle {
-        width: 20px;
-        height: 20px;
-        background-color: $white;
-        border: 1px solid gray;
-        border-radius: 5px;
-        position: absolute;
-        margin-top: -2px;
-    }
-
-    &__radio-circle {
-        border-radius: 50%;
-    }
-
-    &__radio-text {
-        font-size: $font-size-normal;
-        display: inline-block;
-        margin-left: 28px;
     }
 }

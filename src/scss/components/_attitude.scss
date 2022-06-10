@@ -1,0 +1,29 @@
+.attitude {
+    padding: 125px 0;
+    background-image: url("@img/attitude.jpg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 45%;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        margin-left: auto;
+        max-width: 720px;
+    }
+
+    &__title {
+        max-width: 480px;
+        margin-bottom: 50px;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+
+    }
+
+}

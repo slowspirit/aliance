@@ -1,0 +1,136 @@
+.spheres {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 670px;
+    }
+
+    &__title {
+        margin-bottom: 38px;
+    }
+
+    &__lists {
+        display: flex;
+        justify-content: space-between;
+        color: $black;
+    }
+
+    &__list:first-child {
+        .spheres__item {
+            &:nth-child(1) {
+                &::before {
+                    background-image: url("@img/icons/list-item-1.svg");
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background-image: url("@img/icons/list-item-2.svg");
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background-image: url("@img/icons/list-item-3.svg");
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    background-image: url("@img/icons/list-item-4.svg");
+                }
+            }
+
+            &:nth-child(5) {
+                &::before {
+                    background-image: url("@img/icons/list-item-5.svg");
+                }
+            }
+        }
+    }
+
+    &__list:last-child {
+        .spheres__item {
+            &:nth-child(1) {
+                &::before {
+                    background-image: url("@img/icons/list-item-2.svg");
+                }
+            }
+
+            &:nth-child(2) {
+                &::before {
+                    background-image: url("@img/icons/list-item-6.svg");
+                }
+            }
+
+            &:nth-child(3) {
+                &::before {
+                    background-image: url("@img/icons/list-item-7.svg");
+                }
+            }
+
+            &:nth-child(4) {
+                &::before {
+                    background-image: url("@img/icons/list-item-8.svg");
+                }
+            }
+
+            &:nth-child(5) {
+                &::before {
+                    background-image: url("@img/icons/list-item-9.svg");
+                }
+            }
+        }
+    }
+
+    &__item {
+        padding-left: 50px;
+        position: relative;
+        margin-bottom: 22px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 30px;
+            height: 30px;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__icons {
+        display: grid;
+        grid-template-columns: 240px 240px 240px;
+        grid-template-rows: 160px 160px 160px;
+        grid-gap: 1px;
+        background-color: $athens-gray;
+        border: 1px solid $athens-gray;
+        align-items: center;
+        justify-items: center;
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        filter: grayscale(1);
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+}

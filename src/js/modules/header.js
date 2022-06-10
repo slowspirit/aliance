@@ -20,18 +20,18 @@ export default function () {
 
     // Исчезновение header при скролле
 
-    let header = $('.header'),
-        scrollPrev = 0;
+    let header = $('.header');
 
     $(window).scroll(function () {
         let scrolled = $(window).scrollTop();
 
-        if (scrolled > 100 && scrolled > scrollPrev) {
-            header.addClass('out');
+        if (scrolled > 100) {
+            header.removeClass('header--transparent');
+            header.addClass('header--solid');
         } else {
-            header.removeClass('out');
+            header.removeClass('header--solid');
+            header.addClass('header--transparent');
         }
-        scrollPrev = scrolled;
     });
 
 

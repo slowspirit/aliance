@@ -9,12 +9,12 @@
     <title>GUI</title>
 </head>
 
-<body>
+<body style="background-color: silver">
     <!-- HEADER -->
     @@include('html/header.html',{})
 
     <!-- MAIN -->
-    <main>
+    <main style="margin-top: 120px">
         <div class="container">
             <h1>Компоненты</h1>
         </div>
@@ -31,16 +31,6 @@
                         <span>Раздел</span>
                     </li>
                 </ul>
-            </div>
-        </div>
-
-        <!-- input-number -->
-        <div class="container">
-            <h3>Инпут-счетчик</h3>
-            <div class="input-number">
-                <button class="quantity-arrow-minus"> - </button>
-                <input class="quantity-num" type="number" value="1">
-                <button class="quantity-arrow-plus"> + </button>
             </div>
         </div>
 
@@ -66,74 +56,14 @@
             </div>
         </div>
 
-        <!-- checkboxes and radiobuttons -->
         <div class="container">
+            <div style="background-color: rgba(0,0,0, .7)">
+                @@include('html/exclusivity-slider.html',{})
+            </div>
 
-            <!-- checkboxes -->
-            <h3>Чекбоксы</h3>
-            <label class="form__checkbox">
-                <div>
-                    <input class="form__checkbox-input" type="checkbox" checked disabled>
-                    <span class="form__checkbox-square"></span>
-                </div>
-                <span class="form__checkbox-text">Неактивен, выбран</span>
-            </label>
-
-            <label class="form__checkbox">
-                <div>
-                    <input class="form__checkbox-input" type="checkbox" disabled>
-                    <span class="form__checkbox-square"></span>
-                </div>
-                <span class="form__checkbox-text">Неактивен, не выбран</span>
-            </label>
-
-            <label class="form__checkbox">
-                <div>
-                    <input class="form__checkbox-input" type="checkbox" checked>
-                    <span class="form__checkbox-square"></span>
-                </div>
-                <span class="form__checkbox-text">Я люблю чекбоксы</span>
-            </label>
-
-            <label class="form__checkbox">
-                <div>
-                    <input class="form__checkbox-input" type="checkbox">
-                    <span class="form__checkbox-square"></span>
-                </div>
-                <span class="form__checkbox-text">Я не люблю чекбоксы</span>
-            </label>
-
-            <!-- radiobuttons -->
-            <h3>Радио-кнопки</h3>
-            <label class="form__radio">
-                <div>
-                    <input class="form__radio-input" type="radio" name="radio-1" checked disabled>
-                    <span class="form__radio-circle"></span>
-                </div>
-                <span class="form__radio-text">Неактивна, выбрана</span>
-            </label>
-            <label class="form__radio">
-                <div>
-                    <input class="form__radio-input" type="radio" name="radio-2" disabled>
-                    <span class="form__radio-circle"></span>
-                </div>
-                <span class="form__radio-text">Неактивна, не выбрана</span>
-            </label>
-            <label class="form__radio">
-                <div>
-                    <input class="form__radio-input" type="radio" name="radio-3" checked>
-                    <span class="form__radio-circle"></span>
-                </div>
-                <span class="form__radio-text">Я люблю радио-кнопки</span>
-            </label>
-            <label class="form__radio">
-                <div>
-                    <input class="form__radio-input" type="radio" name="radio-3">
-                    <span class="form__radio-circle"></span>
-                </div>
-                <span class="form__radio-text">Я не люблю радио-кнопки</span>
-            </label>
-
+            <div>
+                @@include('html/scheme-slider.html',{})
+            </div>
         </div>
 
         <!-- accordion -->
