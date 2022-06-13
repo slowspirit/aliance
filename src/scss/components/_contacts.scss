@@ -1,0 +1,105 @@
+.contacts {
+    @media #{$screen-1745} {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__phone {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 110%;
+        color: $black;
+        border-bottom: 2px solid $black;
+
+        @media #{$screen-1745} {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+
+    &__info {
+        color: $black;
+        display: flex;
+
+        @media #{$screen-1745} {
+            flex-direction: column;
+            font-weight: 400;
+        }
+
+        & a {
+            padding-left: 34px;
+            position: relative;
+
+            @media #{$screen-1745} {
+                margin-bottom: 10px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 24px;
+                height: 24px;
+                top: 0;
+                left: 0;
+                background-repeat: no-repeat;
+
+            }
+        }
+
+        & .contacts__address {
+            margin-right: 36px;
+
+            &::before {
+                background-image: url("@img/icons/mark.svg");
+            }
+        }
+
+        & .contacts__email {
+            &::before {
+                background-image: url("@img/icons/mail.svg");
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+
+        & a {
+            display: block;
+            vertical-align: top;
+            height: 24px;
+        }
+
+        @media #{$screen-1745} {
+            margin-top: 20px;
+        }
+
+        & .contacts__vk {
+            margin-right: 15px;
+        }
+
+        & .contacts__vk,
+        & .contacts__inst {
+
+            svg {
+                path {
+                    transition: all .3s;
+                    fill: $accent;
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: $accent-hover;
+                    }
+                }
+            }
+        }
+    }
+}

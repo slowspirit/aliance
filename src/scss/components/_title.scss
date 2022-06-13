@@ -6,6 +6,26 @@
         line-height: 120%;
         text-transform: uppercase;
         color: $text-black;
+        position: relative;
+        padding-top: 30px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 150px;
+            height: 2px;
+            top: 0;
+            left: 0;
+            background-color: $accent;
+        }
+
+        @media #{$screen-1440} {
+            font-size: 60px;
+        }
+
+        @media #{$screen-768} {
+            font-size: 48px;
+        }
     }
 
     &__h2 {
@@ -27,6 +47,10 @@
             left: 0;
             background-color: $accent;
         }
+
+        @media #{$screen-1440} {
+            font-size: 48px;
+        }
     }
 
     &__h3 {
@@ -35,5 +59,9 @@
         font-size: 28px;
         line-height: 160%;
         color: $text-black;
+    }
+
+    @media #{$screen-1440} {
+        font-size: 22px;
     }
 }

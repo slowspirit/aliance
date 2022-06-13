@@ -1,23 +1,36 @@
 .menu {
-    position: relative;
     flex-grow: 1;
     border-bottom: 1px solid rgba($athens-gray, .2);
 
+    @media #{$screen-1745} {
+        font-size: 14px;
+    }
+
     &__list {
+        padding: 0;
         margin: 0 50px;
         display: flex;
+        flex-grow: 1;
 
-        @media #{$screen-mobile} {
+        @media #{$screen-1745} {
+            margin: 0 30px;
+        }
+
+        @media #{$screen-1440} {
+            overflow-y: auto;
             position: absolute;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 100px 0 80px 15px;
             top: 0;
             left: 0;
-            left: 0;
-            right: 0;
+            width: 100%;
             height: 100vh;
-            background-color: lightseagreen;
+            color: $black;
+            font-weight: 700;
+            background-color: $white;
             transform: translateY(-200%);
             transition: all .3s;
         }
@@ -25,16 +38,38 @@
         &.menu__list--active {
             transform: translateY(0);
             transition: all .3s;
+
         }
     }
 
     &__item {
-        margin-right: 50px;
+        margin: 0 50px 0 0;
         position: relative;
         cursor: pointer;
         padding: 33px 0;
         border-bottom: 2px solid rgba($accent, 0);
         transition: all .3s;
+
+        @media #{$screen-1745} {
+            margin: 0 40px 0 0;
+            padding: 34px 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(6) {
+            &:hover {
+                @media #{$screen-1440} {
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+
+        @media #{$screen-1440} {
+            padding: 0;
+            margin-bottom: 30px;
+
+        }
 
         &:hover {
             border-bottom: 2px solid rgba($accent, 1);
@@ -48,6 +83,11 @@
             margin-left: auto;
             padding-left: 34px;
             position: relative;
+            transition: all .5s;
+
+            @media #{$screen-1440} {
+                display: none;
+            }
 
             &::before {
                 position: absolute;
@@ -58,16 +98,12 @@
                 height: 24px;
                 background-image: url("@img/icons/phone.svg");
                 background-repeat: no-repeat;
+                transition: all .5s;
             }
 
             &::after {
                 display: none;
             }
-        }
-
-        @media #{$screen-mobile} {
-            margin: 25px 0;
-            font-size: 30px;
         }
 
         &:last-child {
@@ -80,24 +116,37 @@
         z-index: 999;
         display: none;
         padding: 0;
-        width: 40px;
-        height: 40px;
+        padding-left: 25px;
+        text-align: center;
+        width: 80px;
+        height: 68px;
         cursor: pointer;
         border: none;
+        border-right: 1px solid rgba($athens-gray, .2);
+        border-bottom: 1px solid rgba($athens-gray, .2);
         border-radius: 0;
         background-color: transparent;
 
-        @media #{$screen-mobile} {
+        @media #{$screen-1440} {
             display: block;
+            width: 80px;
+            height: 68px;
+            flex-shrink: 0;
         }
 
         &.menu__btn--close {
+            transition: all .3s;
+            border: none;
+            border-right: 1px solid $athens-gray;
+            border-bottom: 1px solid $athens-gray;
+            background-color: $white;
 
             span {
+                background-color: $black;
                 transition: all .3s;
 
                 &:first-child {
-                    transform: translateY(10px) rotate(45deg);
+                    transform: translateY(6px) rotate(45deg);
                 }
 
                 &:nth-child(2) {
@@ -107,19 +156,33 @@
                 }
 
                 &:last-child {
-                    transform: translateY(-10px) rotate(-45deg);
+                    transform: translateY(-6px) rotate(-45deg);
                 }
             }
         }
 
         span {
             display: block;
-            height: 3px;
-            width: 100%;
-            margin: 7px 0;
-            background-color: $black;
+            height: 1px;
+            width: 20px;
+            margin: 5px 0;
+            background-color: $white;
             transition: all .3s;
+            border-radius: 5px;
+
+            &:nth-child(2) {
+                width: 15px;
+            }
         }
+    }
+
+    &__contacts {
+        display: none;
+
+        @media #{$screen-1440} {
+            display: block;
+        }
+
     }
 
 }

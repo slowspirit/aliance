@@ -1,5 +1,4 @@
 .button {
-    border: none;
     cursor: pointer;
 
     &__main {
@@ -10,6 +9,7 @@
         color: $white;
         padding: 24px 50px;
         transition: all .3s;
+
 
         &:hover {
             background-color: $accent-hover;

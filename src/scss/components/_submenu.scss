@@ -8,6 +8,15 @@
     background-color: $white;
     z-index: 999;
 
+    @media #{$screen-1440} {
+        position: relative;
+        display: block;
+        top: 0;
+        color: $regent-gray;
+        font-weight: 400;
+
+    }
+
     &__item {
         margin-bottom: 15px;
 
@@ -26,4 +35,8 @@
 
 ul.submenu {
     padding: 20px 30px;
+
+    @media #{$screen-1280} {
+        padding: 20px 20px 0;
+    }
 }

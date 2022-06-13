@@ -2,6 +2,7 @@
     z-index: 99999;
     position: fixed;
     flex-shrink: 0;
+    top: 0;
     left: 0;
     right: 0;
     color: $white;
@@ -27,9 +28,19 @@
             padding: 23px 0;
         }
 
+        & .menu__btn {
+            border-right: 1px solid $athens-gray;
+            transition: all .5s;
+
+            span {
+                background-color: $black;
+                transition: all .5s;
+            }
+        }
+
         & .logo {
-            padding: 15px 50px;
-            border-bottom: none;
+            transition: all .5s;
+
         }
 
         & .submenu {
@@ -45,7 +56,6 @@
                 fill: $black;
             }
         }
-
     }
 
     &__inner {
@@ -54,8 +64,33 @@
     }
 
     &__btn {
+        z-index: 999;
         align-self: stretch;
         align-content: center;
+
+        @media #{$screen-1745} {
+            font-size: 14px;
+            padding: 30px 24px;
+        }
+
+        @media #{$screen-1440} {
+            // height: px;
+            width: 80px;
+            flex-shrink: 0;
+            padding: 0;
+
+            span {
+                display: none;
+            }
+        }
+
+        svg {
+            display: none;
+
+            @media #{$screen-1440} {
+                display: block;
+            }
+        }
     }
 
 }

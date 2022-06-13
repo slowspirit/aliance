@@ -115,11 +115,11 @@
         display: flex;
         justify-content: space-between;
         width: 588px;
-        // margin-right: 13px;
     }
 
     &__list {
         margin-left: 20px;
+        padding: 0;
 
         &--bold {
             li {
