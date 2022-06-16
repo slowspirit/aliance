@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="css/style.min.css">
+    <link rel="icon"
+        type="image/x-icon"
+        href="@img/icons/favicon.png">
+    <title>О компании</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    @@include('html/header.html',{})
+
+    <!-- MAIN -->
+    <main class="about">
+        @@include('html/section-header.html',{"title": "О компании"})
+        @@include('html/section-image-text.html', {
+        'image-class': 'class="about__image"',
+        'image-src': 'src="@img/about.png"',
+        'image-alt': 'alt="about"',
+        'section-title': 'мы - эксперты в области производства химии',
+        'section-text': 'Разнообразный и богатый опыт говорит нам, что перспективное планирование однозначно фиксирует необходимость поставленных обществом задач! Есть над чем задуматься: ключевые особенности структуры проекта могут быть объединены в целые кластеры себе подобных. Интерактивные прототипы, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут описаны максимально подробно. Значимость этих проблем настолько очевидна, что перспективное планирование играет важную роль в формировании системы массового участия.'
+        })
+
+        <section class="about__exclusivity-slider">
+            <div class="container">
+                @@include('html/exclusivity-slider.html',{
+                'class': 'class="exclusivity-slider exclusivity-slider--border-grey"'
+                })
+            </div>
+        </section>
+
+        <section class="manufacture">
+            <div class="container">
+                <div class="manufacture__inner">
+                    <h2 class="manufacture__title title title__h2">
+                        Наше производство
+                    </h2>
+                    <div class="manufacture__content">
+                        <div class="manufacture__info">
+                            <p class="manufacture__text">
+                                Предварительные выводы неутешительны: разбавленное изрядной долей эмпатии, рациональное мышление обеспечивает широкому кругу (специалистов) участие в формировании глубокомысленных рассуждений. Но граница обучения кадров создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса кластеризации усилий.
+                            </p>
+                            <p class="manufacture__text">
+                                Реализация намеченных плановых заданий, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для соответствующих условий активизации. Предварительные выводы неутешительны: экономическая повестка сегодняшнего дня требует анализа анализа существующих паттернов поведения.
+                            </p>
+                            <div class="manufacture__lists">
+                                <ul class="manufacture__list">
+                                    <li class="manufacture__list-item">
+                                        Автомобильная химия
+                                    </li>
+                                    <li class="manufacture__list-item">
+                                        Бытовая химия
+                                    </li>
+                                    <li class="manufacture__list-item">
+                                        Дезинфицирующие средства
+                                    </li>
+                                </ul>
+                                <ul class="manufacture__list">
+                                    <li class="manufacture__list-item">
+                                        Пищевые аэрозоли
+                                    </li>
+                                    <li class="manufacture__list-item">
+                                        Косметическая продукция
+                                    </li>
+                                    <li class="manufacture__list-item">
+                                        Краски аэрозольные
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <img class="manufacture__image"
+                            src="@img/manufacture.jpg"
+                            alt="manufacture">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('html/attitude.html',{})
+
+        @@include('html/reserch.html',{})
+
+        @@include('html/spheres.html',{})
+
+        @@include('html/request.html',{})
+
+    </main>
+
+    <!-- FOOTER -->
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

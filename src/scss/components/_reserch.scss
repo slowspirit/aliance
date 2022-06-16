@@ -1,0 +1,143 @@
+.reserch {
+    padding: 0;
+    height: 1000px;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    @media #{$screen-992} {
+        height: 900px;
+    }
+
+    @media #{$screen-768} {
+        height: auto;
+        overflow-x: visible;
+        padding-bottom: 75px;
+    }
+
+    &__inner {
+        position: relative;
+    }
+
+    &__title {
+        max-width: 600px;
+        margin-bottom: 20px;
+
+        @media #{$screen-768} {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__slide-text {
+        display: none;
+
+        @media #{$screen-768} {
+            display: block;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    &__slide {
+        width: 705px;
+        padding: 0 15px;
+
+        @media #{$screen-768} {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    &__slide-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 660px;
+
+        @media #{$screen-992} {
+            height: 590px;
+        }
+
+        @media #{$screen-768} {
+            max-height: 490px;
+        }
+    }
+
+    &__slide-image {
+        margin-top: auto;
+        height: 400px;
+
+        @media #{$screen-768} {
+            height: auto;
+        }
+    }
+
+    &__slider {
+        min-width: 0;
+    }
+
+    .slick-list {
+        @media #{$screen-768} {
+            overflow: hidden;
+        }
+    }
+
+    .slick-track {
+        display: flex;
+        margin-left: -15px;
+    }
+
+    .slick-slide {
+        @media #{$screen-768} {
+            width: 100vw;
+
+        }
+    }
+
+    .slick-active {
+        .reserch__slide-text {
+            max-width: 635px;
+            display: block;
+        }
+    }
+
+    .slick-arrow {
+        z-index: 10;
+        position: absolute;
+        bottom: -90px;
+        right: 0;
+        width: 80px;
+        height: 60px;
+        background-color: $accent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        transition: all .3s;
+
+        @media #{$screen-768} {
+            width: 60px;
+            height: 40px;
+            right: 0;
+            bottom: -60px;
+        }
+
+        &:hover {
+            background-color: $accent-hover;
+        }
+    }
+
+    .slick-prev {
+        padding-left: 29px;
+        right: 80px;
+
+        @media #{$screen-768} {
+            right: 60px;
+            padding-left: 15px;
+        }
+    }
+
+    .slick-next {
+        padding-left: 15px;
+    }
+}

@@ -1,7 +1,15 @@
 .scheme {
     margin-top: 75px;
 
+    @media #{$screen-1440} {
+        margin-top: 50px;
+    }
+
     &__title {
         margin-bottom: 50px;
+
+        @media #{$screen-992} {
+            margin-bottom: 30px;
+        }
     }
 }

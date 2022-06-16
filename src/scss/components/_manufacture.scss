@@ -1,0 +1,156 @@
+.manufacture {
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+
+        @media #{$screen-992} {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__info {
+        max-width: 720px;
+        margin-right: 120px;
+
+        @media #{$screen-1280} {
+            margin-right: 30px;
+            margin-top: 0;
+        }
+
+        @media #{$screen-992} {
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin-bottom: 25px;
+
+        @media #{$screen-992} {
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__lists {
+        display: flex;
+        margin-top: 30px;
+
+        @media #{$screen-768} {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    &__list {
+        padding: 0;
+        margin-right: 50px;
+        color: $black;
+
+        @media #{$screen-992} {
+            margin-right: 0;
+            width: 100%;
+        }
+
+        &:first-child {
+            @media #{$screen-992} {
+                margin-bottom: 20px;
+            }
+
+            & .manufacture__list-item {
+                &:nth-child(1) {
+                    &::before {
+                        background-image: url("@img/icons/manufacture-list-item-1.svg");
+                    }
+                }
+
+                &:nth-child(2) {
+                    &::before {
+                        background-image: url("@img/icons/manufacture-list-item-2.svg");
+                    }
+                }
+
+                &:nth-child(3) {
+                    &::before {
+                        background-image: url("@img/icons/manufacture-list-item-3.svg");
+                    }
+                }
+            }
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            & .manufacture__list-item {
+                &:nth-child(1) {
+                    &::before {
+                        background-image: url("@img/icons/manufacture-list-item-4.svg");
+                    }
+                }
+
+                &:nth-child(2) {
+                    &::before {
+                        background-image: url("@img/icons/manufacture-list-item-5.svg");
+                    }
+                }
+
+                &:nth-child(3) {
+                    &::before {
+                        background-image: url("@img/icons/manufacture-list-item-6.svg");
+                    }
+                }
+            }
+        }
+    }
+
+    &__list-item {
+        margin-bottom: 20px;
+        padding-left: 50px;
+        position: relative;
+
+        @media #{$screen-992} {
+            width: 100%;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background-repeat: no-repeat;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+
+        }
+    }
+
+    &__image {
+        margin-top: -170px;
+
+        @media #{$screen-1280} {
+            margin-top: 0;
+            margin-bottom: 30px;
+            width: 50%;
+        }
+
+        @media #{$screen-768} {
+            width: 60%;
+        }
+
+        @media #{$screen-500} {
+            // margin-top: 0;
+            width: 100%;
+        }
+    }
+}

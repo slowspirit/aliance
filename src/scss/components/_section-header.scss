@@ -1,0 +1,13 @@
+.section-header {
+    margin-top: 94px;
+    padding: 50px 0;
+    background-color: $bg-grey;
+
+    @media #{$screen-1440} {
+        margin-top: 68px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+}

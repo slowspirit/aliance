@@ -52,7 +52,7 @@
 
         @media #{$screen-1745} {
             margin: 0 40px 0 0;
-            padding: 34px 0;
+            padding: 33px 0;
         }
 
         &:nth-child(2),
@@ -75,7 +75,10 @@
             border-bottom: 2px solid rgba($accent, 1);
 
             & .menu__submenu {
+                z-index: 999;
                 display: block;
+                visibility: visible;
+                opacity: 1;
             }
         }
 

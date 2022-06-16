@@ -1,13 +1,41 @@
 .scheme-slider {
     // min-width: 0;
+    position: relative;
 
     & .slick-list {
         overflow: hidden;
+
+        @media #{$screen-1440} {
+            margin-right: -15px;
+        }
     }
 
     & .slick-track {
         display: flex;
 
+    }
+
+    & .slick-arrow {
+        z-index: 10;
+        position: absolute;
+        bottom: -60px;
+        right: 0;
+        width: 60px;
+        height: 40px;
+        background-color: $accent;
+        border: none;
+        color: $white;
+        cursor: pointer;
+        transition: all .3s;
+        padding: 10px 15px;
+
+        &:hover {
+            background-color: $accent-hover;
+        }
+    }
+
+    .slick-prev {
+        right: 60px;
     }
 
     &__slide {

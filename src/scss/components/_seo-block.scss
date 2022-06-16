@@ -1,0 +1,50 @@
+.seo-block {
+    padding-bottom: 150px;
+
+    @media #{$screen-992} {
+        padding-bottom: 100px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        color: $accent;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
+        padding-left: 40px;
+        transition: all .3s;
+        position: relative;
+
+        @media #{$screen-992} {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 24px;
+            height: 24px;
+            top: 0;
+            left: 0;
+            background-image: url("@img/icons/seo-btn.svg");
+            background-repeat: no-repeat;
+            transition: all .5s;
+        }
+
+        &:hover {
+            color: $accent-hover;
+
+            &::before {
+                transform: rotate(360deg);
+            }
+        }
+    }
+}

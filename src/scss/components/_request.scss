@@ -3,10 +3,14 @@
     margin-top: 100px;
     position: relative;
     background-color: $bg-grey;
-
     height: 552px;
-
     position: relative;
+
+    @media #{$screen-1280} {
+        margin-top: 0;
+        padding: 50px 0;
+        height: auto;
+    }
 
     &::before {
         position: absolute;
@@ -19,15 +23,28 @@
         background-repeat: no-repeat;
         background-position: left bottom;
         background-size: contain;
+
+        @media #{$screen-1280} {
+            display: none;
+        }
     }
 
     &__inner {
         display: flex;
+
+        @media #{$screen-1280} {
+            justify-content: center;
+        }
+
     }
 
     &__content {
         width: 840px;
         margin-left: auto;
+
+        @media #{$screen-1280} {
+            margin-left: 0;
+        }
     }
 
     &__title {
@@ -41,6 +58,10 @@
     &__text {
         max-width: 640px;
         margin-bottom: 42px;
+
+        @media #{$screen-768} {
+            margin-bottom: 30px;
+        }
     }
 
 }

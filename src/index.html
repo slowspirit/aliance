@@ -3,28 +3,34 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" type="image/x-icon" href="@img/icons/favicon.png">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="css/style.min.css">
+    <link rel="icon"
+        type="image/x-icon"
+        href="@img/icons/favicon.png">
     <title>Aliance</title>
 </head>
 
-<body>
+<body id="index">
+    <!-- HEADER -->
     @@include('./html/header.html',{})
+    <!-- MAIN -->
     <main>
         @@include('html/hero.html',{})
-        <!-- @@include('html/scheme.html',{}) -->
-        <!-- @@include('html/production.html',{}) -->
-        <!-- @@include('html/trademarks.html',{}) -->
-        <!-- @@include('html/attitude.html',{}) -->
-        <!-- @@include('html/spheres.html',{}) -->
-        <!-- @@include('html/blog-mini.html',{}) -->
-        <!-- @@include('html/request.html',{}) -->
-        <!-- @@include('html/footer.html',{}) -->
+        @@include('html/scheme.html',{})
+        @@include('html/production.html',{})
+        @@include('html/trademarks.html',{})
+        @@include('html/attitude.html',{})
+        @@include('html/spheres.html',{})
+        @@include('html/blog-mini.html',{})
+        @@include('html/request.html',{})
     </main>
     <!-- FOOTER -->
-    <!-- @@include('html/footer.html',{}) -->
+    @@include('html/footer.html',{})
     <script src="js/app.min.js"></script>
 </body>
 

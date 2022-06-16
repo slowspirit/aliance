@@ -1,5 +1,8 @@
 .submenu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+
     width: 300px;
     position: absolute;
     top: 94px;
@@ -8,9 +11,14 @@
     background-color: $white;
     z-index: 999;
 
+    @media #{$screen-1745} {
+        top: 94px;
+    }
+
     @media #{$screen-1440} {
         position: relative;
-        display: block;
+        visibility: visible;
+        opacity: 1;
         top: 0;
         color: $regent-gray;
         font-weight: 400;

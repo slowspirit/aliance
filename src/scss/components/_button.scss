@@ -10,7 +10,6 @@
         padding: 24px 50px;
         transition: all .3s;
 
-
         &:hover {
             background-color: $accent-hover;
         }
@@ -18,10 +17,19 @@
 
     &__stroke {
         color: $accent;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 160%;
         padding-left: 60px;
         position: relative;
         cursor: pointer;
         transition: all .3s;
+
+        @media #{$screen-768} {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 160%;
+        }
 
         &::before {
             position: absolute;

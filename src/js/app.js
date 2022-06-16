@@ -7,6 +7,7 @@ import schemeSlider from "./modules/scheme-slider.js";
 import blogMiniSlider from "./modules/blog-mini-slider.js";
 import dotdotdot from "./modules/dotdotdot.js";
 import maskPlugin from "./modules/maskPlugin.js"
+import reserchSlider from "./modules/reserch-slider.js"
 
 
 // flsFunctions.isWebp();
@@ -17,3 +18,5 @@ schemeSlider();
 blogMiniSlider();
 dotdotdot();
 maskPlugin();
+reserchSlider();
+

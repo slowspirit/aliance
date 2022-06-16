@@ -16,11 +16,13 @@
 @import "components/breadcrumbs";
 @import "components/pagination";
 @import "components/contacts";
+@import "components/section-image-text";
 // === Header ===
 @import "components/header";
 @import "components/logo";
 @import "components/menu";
 @import "components/submenu";
+// === INDEX PAGE ===
 // === Hero ===
 @import "components/hero";
 @import "components/exclusivity-slider";
@@ -40,5 +42,17 @@
 @import "components/blog-mini-slider";
 // === Request ===
 @import "components/request";
+// === Section-header ===
+@import "components/section-header";
+// === ABOUT PAGE===
+// === About ===
+@import "components/about";
+// === Manufacture ===
+@import "components/manufacture";
+// === Reserch ===
+@import "components/reserch";
+// === CONTRACT-PRODUCTION PAGE ===
+@import "components/contract-production";
+@import "components/seo-block";
 // === Footer ===
 @import "components/footer";

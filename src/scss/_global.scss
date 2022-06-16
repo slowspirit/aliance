@@ -8,7 +8,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background-color: teal;
+    background-color: $white;
     // padding-top: 100px;
     font-family: $font-family-default, 'Helvetica', 'Arial', sans-serif;
     font-size: $font-size-normal;
@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
 
-    @media #{$screen-1745} {
+    @media #{$screen-992} {
         font-size: 14px;
         line-height: 160%;
     }
@@ -47,6 +47,10 @@ button {
 
 section {
     padding: 75px 0;
+
+    @media #{$screen-992} {
+        padding: 50px 0;
+    }
 }
 
 input[type="number"]::-webkit-inner-spin-button,

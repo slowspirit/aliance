@@ -1,0 +1,46 @@
+.section-image-text {
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        @media #{$screen-768} {
+            flex-direction: column;
+        }
+    }
+
+
+
+    &__info {
+        max-width: 840px;
+
+        @media #{$screen-1280} {
+            max-width: 600px;
+        }
+
+        @media #{$screen-992} {
+            max-width: 450px;
+        }
+
+        @media #{$screen-768} {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        max-width: 600px;
+        margin-bottom: 20px;
+
+        @media #{$screen-1280} {
+            max-width: 400px;
+        }
+
+        @media #{$screen-992} {
+            max-width: 300px;
+        }
+
+        @media #{$screen-768} {
+            max-width: 100%;
+        }
+
+    }
+}
