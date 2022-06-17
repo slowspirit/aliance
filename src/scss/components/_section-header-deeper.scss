@@ -1,0 +1,28 @@
+.section-header-deeper {
+    margin-top: 94px;
+    padding: 50px 0 0;
+    background-color: $bg-grey;
+
+    @media #{$screen-1440} {
+        margin-top: 68px;
+    }
+
+    @media #{$screen-992} {
+        padding: 50px 0;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__image {
+        @media #{$screen-992} {
+            display: none;
+        }
+    }
+}

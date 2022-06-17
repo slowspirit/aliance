@@ -1,0 +1,47 @@
+.page-404 {
+    padding: 150px 0;
+    border-bottom: 1px solid $athens-gray;
+
+    @media #{$screen-992} {
+        padding: 100px 0;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 300px;
+        line-height: 100%;
+        color: $accent;
+
+        @media #{$screen-992} {
+            font-size: 200px;
+        }
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    &__text {
+        color: $black;
+        margin-bottom: 30px;
+        text-align: center;
+        max-width: 480px;
+    }
+
+    &__link {
+        @media #{$screen-450} {
+            width: 100%;
+        }
+    }
+}

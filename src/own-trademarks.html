@@ -12,7 +12,7 @@
     <link rel="icon"
         type="image/x-icon"
         href="@img/icons/favicon.png">
-    <title>@@title</title>
+    <title>Собственные торговые марки</title>
 </head>
 
 <body>
@@ -20,7 +20,12 @@
     @@include('html/header.html',{})
 
     <!-- MAIN -->
-    <main>
+    <main class="own-trademarks">
+        @@include('html/section-header.html',{"title": "Собственные торговые марки"})
+
+        @@include('html/trademarks.html',{})
+
+        @@include('html/request.html',{})
     </main>
 
     <!-- FOOTER -->

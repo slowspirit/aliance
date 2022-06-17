@@ -1,7 +1,7 @@
 .spheres {
     &__inner {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
 
         @media #{$screen-1280} {

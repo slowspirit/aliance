@@ -1,0 +1,22 @@
+.cars-chemistry {
+    &__exclusivity-slider {
+        padding-top: 25px;
+    }
+
+    & .section-image-text {
+        & .section-image-text__image-box {
+            @media #{$screen-1280} {
+                width: 440px;
+            }
+        }
+
+        & .section-image-text__info {
+            max-width: 720px;
+        }
+    }
+
+    & .scheme {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}

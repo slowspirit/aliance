@@ -1,0 +1,139 @@
+.contact-info {
+    margin: 100px 0;
+
+    @media #{$screen-1280} {
+        margin: 50px 0;
+    }
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media #{$screen-1280} {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__phone {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 48px;
+        color: $black;
+        border-bottom: 2px solid $black;
+
+        @media #{$screen-1440} {
+            font-size: 36px;
+        }
+
+        @media #{$screen-1280} {
+            margin-bottom: 32px;
+        }
+
+        // @media #{$screen-768} {
+        //     font-size: 28px;
+        //     line-height: 160%;
+        // }
+    }
+
+    &__contacts {
+        color: $black;
+        font-size: 22px;
+        line-height: 160%;
+
+        @media #{$screen-1440} {
+            font-size: 20px;
+            margin-right: 30px;
+        }
+
+        @media #{$screen-992} {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0;
+        }
+
+        // @media #{$screen-768} {
+        //     font-size: 18px;
+        //     margin-bottom: 20px;
+        // }
+
+
+        & a {
+            padding-left: 60px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 36px;
+                height: 36px;
+                top: 0;
+                left: 0;
+                background-repeat: no-repeat;
+            }
+        }
+
+        & .contact-info__address {
+            margin-right: 36px;
+
+            @media #{$screen-1440} {
+                margin-right: 20px;
+            }
+
+            @media #{$screen-992} {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            &::before {
+                background-image: url("@img/icons/mark.svg");
+                background-size: cover;
+            }
+        }
+
+        & .contact-info__email {
+            @media #{$screen-992} {
+                margin-bottom: 20px;
+            }
+
+            &::before {
+                background-image: url("@img/icons/mail.svg");
+                background-size: cover;
+            }
+        }
+    }
+
+    &__social {
+        & .contact-info__vk {
+            margin-right: 15px;
+        }
+
+        & .contact-info__vk,
+        & .contact-info__inst {
+            display: inline-block;
+            vertical-align: top;
+            height: 36px;
+
+            svg {
+                width: 36px;
+                height: 36px;
+
+                path {
+                    transition: all .3s;
+                    fill: $accent;
+                }
+            }
+
+            &:hover {
+                svg {
+                    path {
+                        fill: $accent-hover;
+                    }
+                }
+            }
+        }
+    }
+}

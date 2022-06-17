@@ -1,22 +1,5 @@
 .about {
-    &__image {
-        margin-right: 120px;
 
-        @media #{$screen-1440} {
-            margin-right: 60px;
-        }
-
-        @media #{$screen-992} {
-            margin-right: 20px;
-            width: 380px;
-        }
-
-        @media #{$screen-768} {
-            width: auto;
-            margin-right: 0;
-            margin-bottom: 50px;
-        }
-    }
 
     &__slider {
         border: 1px solid black;

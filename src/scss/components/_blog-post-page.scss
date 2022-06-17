@@ -1,0 +1,13 @@
+.blog-post-page {
+    & .blog-mini {
+        padding: 50px 0;
+    }
+
+    & .blog-mini__title {
+        display: none;
+    }
+
+    &__section-title {
+        margin-bottom: 0;
+    }
+}

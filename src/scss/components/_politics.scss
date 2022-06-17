@@ -1,0 +1,19 @@
+.politics {
+    &__info {
+        padding: 100px 0 150px;
+        border-bottom: 1px solid $athens-gray;
+
+        @media #{$screen-992} {
+            padding: 50px 0 100px;
+        }
+    }
+
+    &__text {
+        color: $black;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

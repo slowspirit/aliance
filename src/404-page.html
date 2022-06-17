@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="css/style.min.css">
+    <link rel="icon"
+        type="image/x-icon"
+        href="@img/icons/favicon.png">
+    <title>Страница не найдена</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    @@include('html/header.html',{})
+
+    <!-- MAIN -->
+    <main class="page-404">
+        <div class="container">
+            <div class="page-404__inner">
+                <h1 class="page-404__title title title__h1">
+                    404
+                </h1>
+                <h3 class="page-404__subtitle title title__h3">
+                    Страница не найдена
+                </h3>
+                <p class="page-404__text">
+                    Мы не смогли найти страницу с таким адресом, попробуйте перейти на главную или напишите нам.
+                </p>
+                <a class="page-404__link button button__main"
+                    href="index.html">
+                    Вернуться на главную
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    @@include('html/footer.html',{})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

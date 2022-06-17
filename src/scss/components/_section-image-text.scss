@@ -3,12 +3,14 @@
         display: flex;
         align-items: center;
 
+        @media #{$screen-992} {
+            align-items: flex-start;
+        }
+
         @media #{$screen-768} {
             flex-direction: column;
         }
     }
-
-
 
     &__info {
         max-width: 840px;
@@ -23,6 +25,29 @@
 
         @media #{$screen-768} {
             max-width: 100%;
+        }
+    }
+
+    &__image {
+        margin-right: 120px;
+
+        @media #{$screen-1440} {
+            margin-right: 60px;
+        }
+
+        @media #{$screen-1280} {
+            width: 400px;
+        }
+
+        @media #{$screen-992} {
+            margin-right: 20px;
+            width: 380px;
+        }
+
+        @media #{$screen-768} {
+            width: auto;
+            margin-right: 0;
+            margin-bottom: 50px;
         }
     }
 
@@ -41,6 +66,13 @@
         @media #{$screen-768} {
             max-width: 100%;
         }
+    }
 
+    &__text {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

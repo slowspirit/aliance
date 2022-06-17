@@ -1,0 +1,18 @@
+.ag-tech {
+    & .distributor {
+        padding: 100px 0;
+
+        @media #{$screen-768} {
+            padding: 50px 0 0;
+            margin-bottom: 50px;
+        }
+    }
+
+    & .scheme {
+        margin-top: 0;
+    }
+
+    & .spheres {
+        padding: 100px 0;
+    }
+}
