@@ -2,12 +2,4 @@
     max-width: 1470px;
     margin: 0 auto;
     padding: 0 15px;
-
-    @media #{$screen-992} {
-        padding: 0 15px;
-    }
-
-    @media #{$screen-375} {
-        padding: 0 10px;
-    }
 }
