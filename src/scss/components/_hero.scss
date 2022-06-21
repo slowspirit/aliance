@@ -1,27 +1,34 @@
 .hero {
     padding: 0;
     height: 100vh;
-    background-image: url("@img/hero-bg.jpg");
+    min-height: 783px;
+    background: url("@img/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: $white;
 
-    @media #{$screen-992} {
+    @media #{$screen-1280} {
         height: auto;
     }
 
 
     &__inner {
         height: 100vh;
+        min-height: 783px;
         padding-top: 170px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: center;
 
-        @media #{$screen-992} {
+        @media #{$screen-1280} {
             padding-top: 118px;
+            height: auto;
+        }
+
+        @media #{$screen-1280} and (max-height: 800px) {
+            padding-top: 100px 0 0;
             height: auto;
         }
     }
@@ -40,15 +47,27 @@
         margin-bottom: 30px;
         color: $white;
 
+        @media (max-height: 800px) {
+            margin-bottom: 10px;
+        }
+
     }
 
     &__text {
         max-width: 720px;
         margin-bottom: 50px;
+
+        @media (max-height: 800px) {
+            margin-bottom: 30px;
+        }
     }
 
     &__btn {
         width: 313px;
+
+        @media (max-height: 800px) {
+            margin-bottom: 30px;
+        }
 
         @media #{$screen-450} {
             width: 100%;
@@ -60,7 +79,7 @@
         width: 100%;
         height: 168px;
 
-        @media #{$screen-992} {
+        @media #{$screen-1280} {
             height: 184px;
             margin-top: 50px;
         }

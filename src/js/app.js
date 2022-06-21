@@ -8,6 +8,7 @@ import blogMiniSlider from "./modules/blog-mini-slider.js";
 import dotdotdot from "./modules/dotdotdot.js";
 import maskPlugin from "./modules/maskPlugin.js"
 import reserchSlider from "./modules/reserch-slider.js"
+import modal from "./modules/modal.js"
 
 
 // flsFunctions.isWebp();
@@ -19,4 +20,5 @@ blogMiniSlider();
 dotdotdot();
 maskPlugin();
 reserchSlider();
+modal();
 

@@ -74,10 +74,19 @@
             padding: 20px 30px;
             height: 140px;
         }
+
+        @media (max-height: 750px) {
+            padding: 20px 30px;
+            font-size: 14px;
+        }
     }
 
     &__image {
         margin-bottom: 20px;
+
+        @media (max-height: 800px) {
+            margin-bottom: 0;
+        }
     }
 
     &--border-grey {
@@ -116,7 +125,6 @@
             border-bottom: 1px solid $bg-grey;
             color: $black;
         }
-
 
     }
 

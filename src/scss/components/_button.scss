@@ -13,7 +13,17 @@
         &:hover {
             background-color: $accent-hover;
         }
+
+        &--disabled {
+            color: $regent-gray;
+            background-color: $athens-gray;
+
+            &:hover {
+                background-color: $athens-gray;
+            }
+        }
     }
+
 
     &__stroke {
         color: $accent;

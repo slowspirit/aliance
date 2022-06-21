@@ -1,0 +1,68 @@
+<div class="modal">
+    <div class="modal__overlay"
+        id="overlay">
+        <div class="modal__window modal__window--request">
+            <button class="modal__btn-close"
+                id="closeBtn"
+                type="submit">
+                <img id="closeBtnImg"
+                    class="modal__btn-close-image"
+                    src="@img/icons/close.png"
+                    alt="close">
+            </button>
+            <h2 class="request__title title__h2">
+                Есть вопросы?
+            </h2>
+            <p class="request__text">
+                Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы
+                и поможем даже в
+                самых сложных случаях!
+            </p>
+            <form class="request__form form">
+                <div class="form__input-box">
+                    <input id="modalInputName"
+                        class="form__input form__input--name"
+                        type="text"
+                        placeholder="Имя">
+                    <input id="modalInputPhone"
+                        class="form__input form__input--phone"
+                        type="text"
+                        placeholder="Телефон">
+                </div>
+                <div class="form__bottom">
+                    <button class="form__btn button button__main"
+                        id="formBtnSubmit"
+                        type="submit">Отправить заявку</button>
+                    <p class="form__info">
+                        Обращаясь к нам вы получаете не только профессиональную работу, но и абсолютную
+                        конфиденциальность информации!
+                    </p>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="modal__window modal__window--thanks">
+            <button class="modal__btn-close"
+                id="closeBtnThx"
+                type="button">
+                <img id="closeBtnImgThx"
+                    src="@img/icons/close.png"
+                    alt="close">
+            </button>
+            <img class="modal__image"
+                src="@img/thanks.svg"
+                alt="thanks">
+            <h2 class="request__title title__h2">
+                Спасибо за заявку!
+            </h2>
+            <p class="request__text">
+                Наш менеджер свяжется с Вами в ближайшее время ответит на все интересующие вопросы и поможем даже в самых сложных случаях!
+            </p>
+            <a class="form__btn button button__main"
+                id="formBtn"
+                href="index.html">Вернуться на главную</a>
+        </div>
+
+    </div>
+</div>
