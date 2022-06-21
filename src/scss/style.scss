@@ -1,4 +1,3 @@
-@import "libs"; // Файлы стилей вендоров/плвгинов
 @import "vars"; // Переменные
 @import "fonts"; // Подключение шрифтов
 @import "reset"; // Сброс стилей
@@ -12,9 +11,9 @@
 @import "components/container";
 @import "components/title";
 @import "components/button";
-@import "components/form";
 @import "components/breadcrumbs";
 @import "components/pagination";
+@import "components/form";
 @import "components/contacts";
 @import "components/section-image-text";
 @import "components/modal";

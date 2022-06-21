@@ -29,7 +29,6 @@
         @media #{$screen-768} {
             flex: 0 1 100%;
             height: 100%;
-            // width: 100%;
         }
 
         &:hover {
@@ -66,4 +65,5 @@
         margin-left: auto;
         max-width: 100%;
     }
+
 }

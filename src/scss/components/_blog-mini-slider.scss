@@ -58,7 +58,6 @@
     &__slide {
         padding: 0 15px;
 
-
         @media #{$screen-450} {
             height: 195px;
         }
@@ -100,7 +99,6 @@
                     rgba(41, 45, 51, 0.6) 99.99%,
                     rgba(41, 45, 51, 0) 100%), url("@img/blog-1.jpg");
         }
-
     }
 
     &__slide-title {

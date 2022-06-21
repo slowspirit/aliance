@@ -12,7 +12,6 @@
         height: auto;
     }
 
-
     &__inner {
         height: 100vh;
         min-height: 783px;
@@ -38,7 +37,6 @@
 
         @media #{$screen-992} {
             max-width: auto;
-            // margin-top: 50px;
         }
     }
 
@@ -50,7 +48,6 @@
         @media (max-height: 800px) {
             margin-bottom: 10px;
         }
-
     }
 
     &__text {
@@ -84,4 +81,5 @@
             margin-top: 50px;
         }
     }
+
 }

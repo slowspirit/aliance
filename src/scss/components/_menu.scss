@@ -38,7 +38,6 @@
         &.menu__list--active {
             transform: translateY(0);
             transition: all .3s;
-
         }
     }
 
@@ -68,7 +67,6 @@
         @media #{$screen-1440} {
             padding: 0;
             margin-bottom: 30px;
-
         }
 
         &:hover {
@@ -189,7 +187,6 @@
         @media #{$screen-1440} {
             display: block;
         }
-
     }
 
 }

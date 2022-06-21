@@ -2,7 +2,6 @@
     visibility: hidden;
     opacity: 0;
     transition: all .3s;
-
     width: 300px;
     position: absolute;
     top: 94px;
@@ -22,7 +21,6 @@
         top: 0;
         color: $regent-gray;
         font-weight: 400;
-
     }
 
     &__item {
@@ -39,6 +37,7 @@
             color: $accent;
         }
     }
+
 }
 
 ul.submenu {
@@ -47,4 +46,5 @@ ul.submenu {
     @media #{$screen-1280} {
         padding: 20px 20px 0;
     }
+
 }

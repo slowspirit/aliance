@@ -1,5 +1,4 @@
 .manufacture {
-
     &__content {
         display: flex;
         align-items: flex-start;
@@ -131,7 +130,6 @@
 
         &:last-child {
             margin-bottom: 0;
-
         }
     }
 
@@ -149,8 +147,8 @@
         }
 
         @media #{$screen-500} {
-            // margin-top: 0;
             width: 100%;
         }
     }
+
 }

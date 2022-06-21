@@ -6,7 +6,6 @@
         justify-content: space-between;
         margin-bottom: 30px;
 
-
         @media #{$screen-768} {
             flex-direction: column;
         }
@@ -52,7 +51,6 @@
             margin-right: 0;
             margin-bottom: 30px;
         }
-
     }
 
     &__info {
@@ -76,7 +74,7 @@
             left: 0;
             background-image: url("@img/icons/shield.svg");
             background-repeat: no-repeat;
-
         }
     }
+
 }

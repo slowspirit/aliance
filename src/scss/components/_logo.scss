@@ -13,12 +13,9 @@
     }
 
     @media #{$screen-1440} {
-        // padding: 14px 0 15px;
         height: 68px;
         width: 100%;
         padding: 0;
-        // display: flex;
-        // justify-content: center;
         border-right: none;
     }
 
@@ -28,11 +25,11 @@
         height: 44px;
 
         @media #{$screen-1440} {
+            height: 38px;
+
             svg {
                 height: 38px;
             }
-
-            height: 38px;
         }
     }
 
@@ -51,4 +48,5 @@
     transition: all .5s;
     border-bottom: 1px solid $athens-gray;
     background-color: $white;
+
 }

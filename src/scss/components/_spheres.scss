@@ -13,7 +13,6 @@
     &__content {
         max-width: 670px;
 
-        // margin-right: 20px;
         @media #{$screen-1280} {
             margin-bottom: 30px;
         }
@@ -140,16 +139,6 @@
     }
 
     &__icons {
-        // display: grid;
-        // max-width: 100%;
-        // grid-template-columns: repeat(3, 1fr);
-        // grid-template-rows: repeat(3, 1fr);
-        // grid-gap: 1px;
-        // background-color: $athens-gray;
-        // border: 1px solid $athens-gray;
-        // align-items: center;
-        // justify-items: center;
-
         width: 720px;
         display: flex;
         flex-wrap: wrap;
@@ -170,12 +159,6 @@
         filter: grayscale(1);
         transition: all .3s;
         cursor: pointer;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-        // min-width: 240px;
-        // height: 160px;
-        // background-color: $white;
 
         border-left: 1px solid $athens-gray;
         border-bottom: 1px solid $athens-gray;
@@ -186,8 +169,6 @@
             &:last-child {
                 display: none;
             }
-
-
         }
 
         @media #{$screen-450} {
@@ -202,4 +183,5 @@
             filter: grayscale(0);
         }
     }
+
 }

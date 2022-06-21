@@ -1,5 +1,4 @@
 .blog-post {
-
     &__inner {
         display: flex;
         align-items: flex-start;
@@ -155,7 +154,7 @@
             &::marker {
                 color: $accent;
             }
-
         }
     }
+
 }
