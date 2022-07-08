@@ -2800,6 +2800,10 @@ ul.submenu {
     padding: 23px 0 23px;
   }
 
+  .header--height-74 .menu__item.menu__phone {
+    padding-left: 34px;
+  }
+
   .header--height-74 .logo {
     height: 68px;
   }
